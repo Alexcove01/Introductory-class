@@ -4,10 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <style>
+      /*this is how to make a comment in css.*/
+      /* css syntax 
+      selector {
+      property: value;
+      }
+      */
+      /* brackets in css
+      <> angle brackets
+      []bracket or square bracket
+      () parenthesis
+      {} curl brackets*/
+      /* In css we have various selection methods, we have 
+       selection bty tagname e.g p, header
+       selection by classname e.g .book,.header
+       selection by id e.g. #book, #test
+       selection by attribute
+       */
+
+      /*examples of selections*/
+      selection by classname .main p {
+        color: yellow;
+      }
+      selection by tagname p {
+        color: brown;
+      }
+      selection by id #test {
+        color: green;
+        
+      }
+      selection by attribute
+      input[type="password"] {
+        border-color: red;
+      }
+      h3{
+        color: green!important;
+      }
+      .h-logo{
+        color: purple;
+        font-weight: 300;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h2>Logo</h2>
+      <h2 style="color: red" id="logo">Chimmy's <span class="h-logo">Bread</span></h2>
       <nav>
         <a href="#">
           <p>Home</p>
@@ -27,6 +69,13 @@
     <main>
       <h2>Home Page</h2>
       <p>Welcome to</p>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </form>
 
       <p>Additional Pages</p>
       <a href="rouge/xyz.html"></a><br />

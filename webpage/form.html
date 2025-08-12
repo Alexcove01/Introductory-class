@@ -6,9 +6,17 @@
     <title>| Form</title>
   </head>
   <body>
+    <!--the form element have 2 attributes the action and the method is where we specify the the link the form submits to whie the method attribute is used to specify the method.-->
     <form action="" method="">
       <label for="firstname">Firstname:</label>
-      <input type="text" id="firstname" name="firstname" />
+      <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        placeholder="john"
+        required
+        autofocus
+      />
       <br />
       <label for="lastname">Lastname:</label>
       <input type="text" id="lastname" name="lastname" />
@@ -26,7 +34,58 @@
       <label for="age">Age:</label>
       <input type="number" id="age" min="0" max="120" />
       <br />
-      <button type="submit">Submit</button>
+      <label for="resume">Resume</label>
+      <input type="file" id="resume" name="resume" />
+      <br />
+      <!--makin a dropbox in html/in dropbox the select element makes it possible to choosr by defaut-->
+      <label for="country">Select your country</label>
+      <select name="country" id="country">
+        <option value="" disabled selected>---Select Your Country---</option>
+        <optgroup label="Africa">
+          <option value="nigeria">Nigeria</option>
+          <option value="ghana">Ghana</option>
+          <option value="egypt">Egypt</option>
+        </optgroup>
+        <optgroup label="America">
+          <option value="usa">United States</option>
+          <option value="brazil">Brazil</option>
+          <option value="canada">Canada</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="england">England</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+        </optgroup>
+      </select>
+      <!--making a checbos in html-->
+      <br />
+      <label for="language">Choose your Language</label>
+      <br />
+      <input type="checkbox" name="language" value="php" id="php" />
+      <label for="php">PHP</label>
+      <input type="checkbox" name="language" value="python" id="python" />
+      <label for="python">Python</label>
+      <input type="checkbox" name="language" value="ruby" id="ruby" />
+      <label for="ruby">Ruby</label>
+      <input type="checkbox" name="language" value="js" id="js" />
+      <label for="js">Javascript</label>
+      <br />
+      <!--making a radio button in html form/added checked if you wsnt one box to be selected by defult/using col and row can reshape the size of a box under textarea/a submit button can also be created with input with a type botton but it wont have anyeffect on the form action unless the type bottoned is chnged to submit-->
+      <label for="gender">Gender</label>
+      <br />
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" value="other" id="others" />
+      <label for="others">others</label>
+      <br />
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      <br />
+
+      <button>Submit</button>
+      <input type="button" value="Submit"/>
     </form>
   </body>
 </html>
